@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+body {
+  height: 100vh;
+  background: #202428;
+  font-family: 'PT Sans', sans-serif; }
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none; }
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0; }
+  .container .icon-option-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #202428;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.02, 0.53, 0.49);
+    transition: all 0.3s cubic-bezier(0.25, 0.02, 0.53, 0.49);
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    will-change: transform; }
+    .container .icon-option-wrapper .player-chose-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -webkit-animation: fadeIn 0.5s ease-in-out forwards;
+              animation: fadeIn 0.5s ease-in-out forwards; }
+      .container .icon-option-wrapper .player-chose-wrapper p {
+        font-size: 3em; }
+      .container .icon-option-wrapper .player-chose-wrapper .icon-option {
+        font-size: 4em;
+        margin-right: 60px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.5);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+        .container .icon-option-wrapper .player-chose-wrapper .icon-option:last-child {
+          margin-right: 0; }
+        .container .icon-option-wrapper .player-chose-wrapper .icon-option:hover {
+          color: white; }
+  .container .game-grid {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .container .game-grid .square {
+      height: 133px;
+      display: inline-block;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 100px;
+              flex: 1 100px;
+      border-right: 3px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+      color: #fff;
+      line-height: 133px;
+      font-size: 4em;
+      font-weight: bold;
+      text-align: center; }
+      .container .game-grid .square.bottom {
+        border-bottom: none; }
+      .container .game-grid .square.bottom-right {
+        border-right: none; }
+      .container .game-grid .square.middle-right {
+        border-right: none; }
+      .container .game-grid .square.top-right {
+        border-right: none; }
+      .container .game-grid .square i {
+        font-size: 4.5em;
+        line-height: 133px;
+        color: #fff;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out; }
+
+footer {
+  text-align: center;
+  padding: 30px; }
+  footer .btn {
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 100px;
+    padding: 0;
+    font-size: 2em;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    footer .btn:hover {
+      color: white; }
+    @media (max-width: 410px) {
+      footer .btn {
+        margin: 0; } }
+  footer .score {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 20px; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) translateZ(-100px);
+            transform: translate(-50%, -50%) translateZ(-100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0);
+            transform: translate(-50%, -50%) translateZ(0);
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) translateZ(-100px);
+            transform: translate(-50%, -50%) translateZ(-100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0);
+            transform: translate(-50%, -50%) translateZ(0);
+    opacity: 1; } }

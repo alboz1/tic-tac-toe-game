@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+	<div class="container">
+		 <div class="icon-option-wrapper">
+			<div class="player-chose-wrapper">
+				<p>Choose X or O</p>
+				<button class="icon-option" id="icon-o">O</button>
+				<button class="icon-option" id="icon-x">X</button>
+			</div>
+		</div> 
+
+		<div class="game-grid">
+			<button class="square top-left" data-number="0"></button>
+
+			<button class="square top-center" data-number="1"></button>
+
+			<button class="square top-right" data-number="2"></button>
+
+			<button class="square middle-left" data-number="3"></button>
+
+			<button class="square middle-center" data-number="4"></button>
+
+			<button class="square middle-right" data-number="5"></button>
+
+			<button class="square bottom bottom-left" data-number="6"></button>
+
+			<button class="square bottom bottom-center" data-number="7"></button>
+
+			<button class="square bottom bottom-right" data-number="8"></button>
+		</div>
+	</div>
+
+	<footer>
+		<span class="score" id="player-score">Player: 0</span>
+		<span class="score" id="computer-score">Computer: 0</span>
+		<button class="btn">New Game</button>
+	</footer>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
